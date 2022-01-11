@@ -1,11 +1,13 @@
 public class SortingAlgorithms{
-	
+	//variables used throughout the program in all three methods
 	private int[] arr = {1, 2, 3};
 	private int swaps = 0;
 	private int temp = 0;
 	private int min = 0;
 	
-	public void bubbleSort(){ 
+	//Bubble Sort. Takes an array and compares the first two numbers, finds the larger value and places it on the right. This is repeated throuhgout the array until the 
+	//largest number is to the far right. It then repeats the process until the array has been sorted in increasing order.
+	public void bubbleSort(){  
 	
 	
 	int counter = 10;
@@ -33,7 +35,9 @@ public class SortingAlgorithms{
 	 System.out.print(swaps);
 }
 
-
+	//Sellection Sort. Sets the first number in an array to the minimum value, then goes through the rest of the array and compares that value to every other value and if 
+	//another number is smaller then it sets that number to the minimum. Once the program reaches the end of the array the minimum is set to the left of the array. This 
+	//process is repeated until the array is sorted in increasing order.
 	public void selectionSort(){ 
 		
 		for (int x = 0; x < arr.length - 1; x++){
@@ -61,7 +65,9 @@ public class SortingAlgorithms{
 
 
 }
-
+	//Insertion Sort. Assumes the first number in the array is sorted. Then it goes to the next number, and if that number is less that the already sorted number, it moves 
+	//that number to the left of the already sorted number. If that number is larger, then it sees it as already sorted and continues. This process is repeated until the 
+	//array is sorted in increasing order. 
 	public void insertionSort(){ 
 		for(int x = 1; x < arr.length; x++){
 			
