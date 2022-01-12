@@ -100,9 +100,9 @@ public class SortingAlgorithms{
 			while(y>0 && arr[y-1]>temp){
 				arr[y] = arr[y-1];
 				y--;
-				
+				swaps++;
 			}
-			swaps++;
+			
 			arr[y] = temp;
 		}
 		System.out.println(swaps);
@@ -121,11 +121,6 @@ public class SortingAlgorithms{
 
 }
 }
-
-
-
-	
-		
 
 
 
